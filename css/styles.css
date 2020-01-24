@@ -50,7 +50,7 @@ header {
 }
 
 .nav-links li a:hover {
-	color: #0024a5; /*#C94C4C;*/
+	color: #0024a5; 
 }
 
 .gallery {
@@ -75,7 +75,7 @@ header {
 
 .jumbotron {
 	padding: 50px 12%;
-	background-color: #7bcaf7;/*#f8b5b0;/*#f5f5fa;*/
+	background-color: #7bcaf7;
 	color: black;
 	width: 100%;
 }
@@ -110,14 +110,14 @@ header {
 }
 
 .btn-primary {
-	border-color: #7bcaf7; /*#f8b5b0;*/
-	background-color: #7bcaf7; /*#f8b5b0;*/
+	border-color: #7bcaf7; 
+	background-color: #7bcaf7; 
 	color: white;
 	box-shadow: -1px 1px 10px rgba(123, 202, 247, 0.50);
 }
 .btn-primary:hover {
-	background-color:#0024a5; /*#C94C4C;*/
-	border-color: #0024a5;/*#C94C4C;*/
+	background-color:#0024a5; 
+	border-color: #0024a5;
 	color: #fff;
 
 }
