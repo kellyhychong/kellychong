@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
+.main {
+	display: block;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+}
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -19,30 +25,31 @@ li, a, button {
 }
 
 header {
-	background-color: #F7E9E8;
+	background-color: white;
 	width: 100%;
 }
 
+.serif {
+	font-family: "DM Serif Display", serif;
+}
 .header-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px
+	padding-top:50px;
+	padding-bottom: 50px;
 }
 
-.jumbotron {
-	padding: 50px 12%;
-	background-color: #F7E9E8;
-	color: black;
+.hero {
+	background-color: white;
 	width: 100%;
+	padding-bottom: 60px;
 }
 
 .logo {
 	cursor:pointer;
-	margin-left: -40px;
 
 }
 
@@ -65,32 +72,44 @@ header {
 	color: #C38C87; 
 }
 
-.gallery {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
+#active {
+	color: #C38C87;
+	font-weight: 700;
+}
+.projects-all {
+	display: block;
+	max-width: 1000px;
+	align-items: center;
+	margin: auto;
 }
 
-.col-sm {
-	padding: 0px;
-	
-}
-.card {
-	padding: 15px;
-}
-
-.home {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
-}
-
-
-
-.container-about {
+.project-container {
 	display: flex;
 	align-items: center;
-	padding: 30px 8%;
+	border-radius: 10px;
+	/*border-style: solid;*/
+	/*border-color: #333;*/
+	box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.1);
+	margin-bottom: 50px;
+}
+
+.project-card {
+	display: flex;
+}
+
+.project-img-card {
+	max-width: 50%;
+	min-width: 50%;
+}
+#project-img {
+	object-fit: cover;
+	border-radius: 10px;
+	max-width: 100%;
+}
+.project-info {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
 }
 
 .subtitles {
@@ -98,11 +117,14 @@ header {
 	font-weight: normal; 
 }
 
+.role-desc {
+	line-height:24px;
+}
+
 .display-4 { /*Header Title*/ 
 	font-family: 'DM Serif Display', serif;
 	font-weight: 400;
-	padding: 10px 0px;
-	color: #C38C87;
+	color: #333333;
 }
 
 .btn {
@@ -120,6 +142,7 @@ header {
 	border-color: #F8B5B0; 
 	background-color: #F8B5B0; 
 	color: white;
+	max-width: 200px;
 	box-shadow: -1px 1px 10px rgba(248, 181, 176, 0.50);
 }
 .btn-primary:hover {
@@ -147,42 +170,76 @@ border-color: #C38C87;
 color: #C38C87;
 }
 
-.white {
+.subtext {
 	color:#C38C87;
-	margin-left: 5px;
 }
 
 .card-img-top {
 	object-fit: cover;
 }
 
+.card-title {
+	font-weight: 700;
+	padding-bottom: 10px;
+}
 
+.card-subtitle { /*problem subheadings*/
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.card-text {
+	padding-bottom: 20px;
+}
+.info-partition {
+	display: flex;
+	padding-bottom: 5px;
+	justify-content: space-between;
+	align-items: center;
+}
 .mb-3 {
 	padding: 20px;
 	border-style: none;
-	width: 75%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.card-title {
-	font-weight: 600;
-}
-
-.about2 {
-	margin-left: 20px;
-}
 
 .black {
 	color: black;
 	font-size: 36px;
-	padding: 20px 0px 10px 0px;
 }
 
+.about-container {
+	display: flex;
+    align-items: center;
+    /* border: 1px solid rgba(0,0,0, 0.2); */
+    border-radius: 5px;
+    margin-bottom: 4.5em;
+    background-color: white;
+}
 .about {
 	color: black;
 	font-size: 36px;
 	padding: 0px;
+}
+
+.headshot {
+    display: flex;
+    object-fit: cover;
+}
+
+.headshot-img {
+	max-width: 75%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info {
+	display: flex;
+	padding: 1.5em;
+    flex-direction: column;
 }
 .wmg {
 	width: 100%;
@@ -262,21 +319,19 @@ color: #C38C87;
 
 .roles {
 	display: inline-block;
-	padding: 50px 30px 50px;
 	line-height: 15px;
 
 }
 .overview-p {
 	display: inline-block;
-	padding: 50px 30px 50px;
+	padding-left:20px;
 	width: 75vh;
 }
 
 .overview {
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
+	align-content:center;
+	padding-bottom:40px;
 
 }
 .contact {
@@ -312,38 +367,16 @@ background-color: black;
 	padding-top: 30px;
 }
 
-.one-strip {
-	width: 85%;
-	padding: 0px 30px 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.one-trip {
-	width: 82%;
-	padding: 0px 10px;
-	margin-left: auto;
-	margin-right: auto;
+.carousel-container {
+	padding-bottom: 40px;
 }
 
 .tcc {
 	object-fit: cover;
 	width:300px;
 }
-.one-strip-2 {
-	width: 100%;
-	padding: 0px 200px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.beefreshjan {
-	width: 80%;
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 0px;
-	margin-left: auto;
-	margin-right: auto;
+.section {
+	padding: 20px 0px 10px 0px;
 }
 
 .website-link {
@@ -360,22 +393,16 @@ background-color: black;
 	width: 80%;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
-.beefresh-website {
+.beefresh-media {
 	width: 100vh;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .marketresearch {
 	width: 80%;
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 
 .process {
@@ -384,11 +411,9 @@ background-color: black;
 	margin-right: auto;
 }
 
-.persona{
+.persona {
 	display: flex;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 90%;
 }
 
 .flow {
@@ -404,13 +429,63 @@ background-color: black;
 	padding: 50px 0px 30px;
 }
 
-.westernq-demo {
-	width: auto;
-	height:50%;
-	padding-left: 30px;
+.westernq-demo-container {
+	max-width: 100%
+	height: 250px;
+}
 
+.westernq-demo{ 
+    width: auto; 
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .d-md-block {
 	background-color: black;
 }
+
+@media all and (max-width: 800px) {
+	.main {
+		padding: 2em;
+	}
+	.header-nav {
+		padding: 1.5em;
+	}
+    .about-container {
+        flex-wrap: wrap;
+    }
+    .hero {
+    	padding: 2em;
+    }
+    .projects-all {
+    	padding: 2em;
+    }
+    .project-container {
+    	flex-wrap: wrap;
+    }
+    .section {
+    	padding: 2em;
+    }
+    .overview {
+    	padding: 2em;
+    }
+ }
+
+@media all and (max-width: 600px) {
+	.project-card {
+    	flex-wrap: wrap;
+    }
+    .project-img-card {
+    	max-width:100%;
+    }
+    .beefresh-media {
+    	max-width: 100%
+    	padding: 2em;
+    }
+    .beefreshjan {
+    	max-width: 100%;
+    	padding: 2em;
+    	flex-wrap: wrap;
+    }
+}
+
