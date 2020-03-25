@@ -10,6 +10,7 @@
  </head>
 
   <body>
+    <div class="main">
   	<!--navbar-->
   	  <header>
         <div class="header-nav">
@@ -26,7 +27,7 @@
    </header>
 
    <!--landing page jumbotron-->
-<div class="jumbotron">
+<div class="hero">
   <h1 class="display-4">Eliminating line-up nuances on campus</h1>
   <p class="lead"><!--if I want to have subtext under intro--></p>
   <!--line divider: <hr class="my-4">-->
@@ -52,28 +53,29 @@
 </div>
 </div>
  <!--video demo-->
-    <div class="westernq-demo">
-    <video controls>
-     <source src="images/qdemo.mp4" type="video/mp4" height="50%" width="auto">
+    <div class="westernq-demo-container">
+      <div class="westernq-demo">
+    <video controls autoplay width="100%" height="auto">
+     <source src="images/qdemo.mp4" type="video/mp4">
   Your browser does not support the video tag.
     </video>
     </div>
-
+  </div> <!--end of demo contanier-->
 <!--problem statement-->
 <br>
-<div class="one-strip">
+<div class="section">
   <h1 class="display-4 black">Problem Statement</h1>
   </div>
-<div class="one-trip">
+<div class="section">
   <h2 class="problem-statement">"How might we improve the waiting experience at eateries?"</h2>
   </div>
 
 <!--user research-->
 <br>
-<div class="one-strip">
+<div class="section">
   <h1 class="display-4 black">User Research</h1>
   </div>
-<div class="one-trip">
+<div class="section">
   <p> Before beginning any designs, I conducted 9 user interviews on students studying at Western University for their insights on the problem and premise for the application. From these findings, I was able to put together two user personas that illustrates the potential users for this app:</p>
   </div>
   <!--persona images-->
@@ -83,10 +85,10 @@
 </div>
 
 <br>
-<div class="one-strip">
+<div class="section">
   <h1 class="display-4 black">User Flows</h1>
   </div>
-<div class="one-trip">
+<div class="section">
   <p> Next, based on the personas I deduced the basic use cases that might be involved. </p>
   </div>
   <!--flow images-->
@@ -113,24 +115,24 @@
   </a>
 </div>
 <br>
-<div class="one-strip">
+<div class="section">
   <h1 class="display-4 black">Iterations</h1>
   </div>
-<div class="one-trip">
+<div class="section">
   <p> Then came the wireframes. After putting together my initial batch of wireframes, I sent them out to the same users I conducted interviews on to test, collecting their feedback through a standardized Google Forms along with a screen recording of their test. This process led me to make iterations on iterations, and really opened up my eyes to how my design decisions initially may not have been as intuitive as I thought they were upon feedback.  After continuously iterating and testing, I went on to create a hi-fidelity mockup of the latest iteration. </p>
   </div>
   <!--wireframe images-->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="images/lofi1.PNG" alt="First slide">
+      <img class="d-block w-100" src="images/lofi1.png" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>The First Wireframe</h5>
     <p>Layout of screens I THOUGHT were needed. Little interaction at all.</p>
   </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/lofi2.PNG" alt="Second slide">
+      <img class="d-block w-100" src="images/lofi2.png" alt="Second slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>Second Iteration</h5>
     <p>I learned (thanks to my mentor) that wireframes should be a lot more dynamic! Added more copy, and more interactions such as onboarding screens, expanding eatery cards instead of opening a new page, a favourites page, and different setting permissions.</p>
@@ -175,7 +177,7 @@
   <a href="mailto:kellyhychong@gmail.com" target="_blank">
   <img src="images/mail.png" width="30" height="35"></a>
 </div>
-<p class="footer-text">Made by Kelly Chong © 2020</p>
+<p class="footer-text">Created by Kelly Chong © 2020</p>
 </footer>
 
 
@@ -183,5 +185,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</div>
   </body>
 </html>
