@@ -7,15 +7,18 @@
   <title>Kelly Chong — Home</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/peachversion.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="script.js">
   </script>
 </head>
 <body>
   <!--navbar-->
-  <div class="main">
     <header>
-      <div class="header-nav">
+   <div class="navbar">
+    <div class="navcontent">
+      <div class="logo-container">
         <a href="index.html"><img class="logo" height="75" id="logochange" src="images/kellypeach.png" width="100"></a>
+      </div>
         <nav>
           <ul class="nav-links">
             <li>
@@ -25,17 +28,19 @@
               <a href="about.html">About</a>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="play.html">Play</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header><!--landing page jumbotron-->
+    </div>
+  </div>
+     </header>
+  <div class="main">
+  <!--landing page jumbotron-->
     <div class="hero">
-      <h1 class="display-4">Hi, I'm Kelly! 👋</h1>
-      <h2 class="serif">I strive to design end-to-end experiences enjoyable for all.</h2>
-      <p class="lead"><!--if I want to have subtext under intro--></p><!--line divider: <hr class="my-4">-->
-      <p class="subtext">BMOS @ Western University | From Vancouver, BC</p><!--jumbotron button: <a class="btn" href="about.html" role="button">about me</a>-->
+      <h1>Hi, I'm Kelly! 👋</h1>
+      <h2>A multidisciplinary creator with a focus on product design.</h2>
+      <h5>BMOS @ Western University | From Vancouver, BC</h5><!--jumbotron button: <a class="btn" href="about.html" role="button">about me</a>-->
     </div><!--portfolio section-->
     <div class="projects-all">
     <!--westernq-->
@@ -60,7 +65,7 @@
             <p class="card-text">UI/UX Designer / WITS Ada Mentorship Program</p>
           </div>
           </div> <!--end of info-partition div-->
-          <a class="btn btn-primary" href="westernq.html">view case study</a>
+          <a class="btn projects" href="westernq.html">view case study</a>
           </div>
         </div>
       </div>
@@ -88,33 +93,7 @@
             <p class="card-text">UI/UX Designer, Illustrator / SheHacks IV</p>
           </div>
           </div> <!--end of info-partition div-->
-            <a class="btn btn-primary" href="budgetbuddy.html">view case study</a>
-          </div>
-        </div>
-      </div>
-       <!--TCC-->
-      <div class="project-container">
-        <div class="project-card">
-          <div class=project-img-card>
-            <img alt="TCC Event Promo Brochure" id="project-img" src="images/tccconcepts.png">
-          </div>
-          <div class="project-info">
-            <h4 class="card-title">The 5th Annual Technology Consulting Competition</h4>
-            <div>
-            <h6 class="card-subtitle">PROBLEM</h6>
-            <p class="card-text">How can we attract more participants to the TCC?</p>
-          </div>
-          <div class="info-partition">
-          <div>
-            <h6 class="card-subtitle">GOAL</h6>
-            <p class="card-text">Re-brand event and deliver memorable promotions.</p>
-          </div>
-          <div>
-            <h6 class="card-subtitle">ROLE</h6>
-            <p class="card-text">Branding & Illustration / Western Founders Network</p>
-          </div>
-          </div> <!--end of info-partition div-->
-          <a class="btn btn-primary" href="tcc.html">view project</a>
+            <a class="btn projects" href="budgetbuddy.html">view case study</a>
           </div>
         </div>
       </div>
@@ -140,29 +119,20 @@
             <p class="card-text">Co-Founder, Marketing Lead, Web Designer & Developer / UBC Ennovate</p>
           </div>
           </div> <!--end of info-partition div-->
-          <a class="btn btn-primary" href="beefresh.html">view project</a>
-          </div>
-        </div>
-      </div>
- 
-      <!--playground-->
-    <div class="project-container">
-        <div class="project-card">
-          <div class=project-img-card>
-          <img alt="Motion Graphic" id="project-img" src="images/16th.gif" width="100%">
-          </div>
-          <div class="project-info">
-            <h5 class="card-title">Pixel Memories</h5>
-            <p class="card-text">A collection of fun illustrations and motion graphics!</p><a class="btn btn-primary" href="work.html">view pieces</a>
+          <a class="btn projects" href="beefresh.html">view project</a>
           </div>
         </div>
       </div>
     </div><!--end of projects-all-->
-   <footer class="footer">
+  </div><!--end of main-->
+ <footer class="footer">
+     <h3 class="footer-heading">Thanks for stopping by! Get in touch:</h3>
     <div class="container-social">
-      <a href="https://www.instagram.com/lychodesign/" target="_blank"><img height="30" src="images/ig.png" width="30"></a> <a href="https://www.linkedin.com/in/kellyhychong/" target="_blank"><img height="30" src="images/linkedin.png" width="30"></a> <a href="mailto:kellyhychong@gmail.com" target="_blank"><img height="35" src="images/mail.png" width="30"></a>
+      <a href="https://www.instagram.com/lychodesign/" class="fa fa-instagram" target="_blank"></a> 
+      <a href="https://www.linkedin.com/in/kellyhychong/" class="fa fa-linkedin" target="_blank"></a> 
+      <a href="mailto:kellyhychong@gmail.com" class= "fa fa-envelope" target="_blank"></a>
     </div>
-    <p class="footer-text">Created by Kelly Chong © 2020</p>
+    <h4 class="footer-text">designed & developed by me © 2020</h4>
     </footer>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
     </script> 
@@ -170,6 +140,6 @@
     </script> 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script> 
-  </div><!--end of main-->
+
 </body>
 </html>
